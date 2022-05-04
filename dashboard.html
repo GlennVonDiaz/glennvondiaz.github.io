@@ -25,13 +25,10 @@
     <script src="assets/js/script.js"></script>
 
     <style>
-        a.lbtn-light {
-            padding: 0 7px;
-        }
-
         .lhead {
             padding: 3rem 1rem;
         }
+
 
         .lbody {
             padding: 0 1rem 3rem 1rem;
@@ -67,6 +64,10 @@
             .thedrad>* {
                 margin-right: 1rem;
             }
+
+            .thedrad>*:last-child {
+                margin-right: 0;
+            }
         }
     </style>
 
@@ -84,7 +85,8 @@
                 </a>
                 <div class="col">
                     <div class="ldropdown">
-                        <button class="lbtn-light">Menu <i class="bi bi-chevron-down"></i></button>
+                        <button class="lbtn-light btn fw-bold rounded-pill">Menu <i
+                                class="bi bi-chevron-down"></i></button>
                         <div class="ldropdown-content d-none">
                             <ul>
                                 <li class="menu-list"><a href="dashboard.html">Dashboard</a></li>
@@ -97,8 +99,9 @@
                             </ul>
                         </div>
                     </div>
-                    <a class="lbtn-blue" href="!! logout !!" id="lo-btn"><i class="bi bi-box-arrow-right"></i> LOG
-                        OUT</a>
+                    <a class="lbtn-blue btn rounded-pill fw-bold" href="!! logout !!" id="lo-btn"><i
+                            class="bi bi-box-arrow-right"></i>
+                        Logout</a>
                 </div>
             </div>
         </div>
@@ -130,9 +133,9 @@
             </div>
             <div class="row my-3">
                 <div class="col thedrad">
-                    <a class="lbtn-light"><i class="bi bi-calendar4-week"></i> Jadwal</a>
-                    <a href="profile.html" class="lbtn-light"><i class="bi bi-person"></i> Profile</a>
-                    <a href="help.html" class="lbtn-light"><i class="bi bi-chat-dots"></i> Bantuan</a>
+                    <a class="btn lbtn-light rounded-pill"><i class="bi bi-calendar4-week"></i> Jadwal</a>
+                    <a href="profile.html" class="btn lbtn-light rounded-pill"><i class="bi bi-person"></i> Profile</a>
+                    <a href="help.html" class="btn lbtn-light rounded-pill"><i class="bi bi-chat-dots"></i> Bantuan</a>
                 </div>
             </div>
             <div class="row card-container">

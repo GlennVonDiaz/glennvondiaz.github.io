@@ -29,6 +29,7 @@ $(document).ready(function () {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("aksi!", "aksi disini", "info");
+        document.location = "pengubahanDataDomisiliAfter.html";
       }
     });
   });
@@ -48,6 +49,7 @@ $(document).ready(function () {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("aksi!", "aksi disini", "info");
+        document.location = "profile.html";
       }
     });
   });
@@ -67,6 +69,7 @@ $(document).ready(function () {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("aksi!", "aksi disini", "info");
+        document.location = "verDokJalurAfirmasiAfter.html";
       }
     });
   });
@@ -86,6 +89,7 @@ $(document).ready(function () {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("aksi!", "aksi disini", "info");
+        document.location = "verDokPerpindahanTugasOrtuWaliAfter.html";
       }
     });
   });
@@ -105,6 +109,7 @@ $(document).ready(function () {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("aksi!", "aksi disini", "info");
+        document.location = "pendataanRadiusAfter.html";
       }
     });
   });
@@ -124,6 +129,7 @@ $(document).ready(function () {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("aksi!", "aksi disini", "info");
+        document.location = "verDokPenambahanNilaiPNAAfter.html";
       }
     });
   });
@@ -143,6 +149,7 @@ $(document).ready(function () {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("aksi!", "aksi disini", "info");
+        document.location = "dataSiswaLulusanLuarDIYAfter.html";
       }
     });
   });

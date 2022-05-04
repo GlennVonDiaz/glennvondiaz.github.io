@@ -43,63 +43,21 @@
 }
 
 .lbtn-light {
-  height: 40px;
   background-color: white;
   border: none;
   border-radius: 18px;
   box-shadow: 0px 2px 5px rgb(197, 197, 197);
-  box-sizing: content-box;
-  padding: 0 13px;
   cursor: pointer;
 }
 .lbtn-light:active,
 .lbtn-light:hover {
   background-color: rgb(235, 235, 235);
 }
-a.lbtn-light {
-  height: 40px;
-  background-color: white;
-  border: none;
-  border-radius: 18px;
-  box-shadow: 0px 2px 5px rgb(197, 197, 197);
-  box-sizing: content-box;
-  padding: 0 13px;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  line-height: 40px;
-  vertical-align: middle;
-  text-decoration: none;
-  color: #000000;
-}
-a.lbtn-light:hover {
-  color: #000;
-}
-a.lbtn-blue {
-  min-width: 90px;
-  height: 40px;
-  background-color: white;
-  border: 1px solid #1e90ff;
-  border-radius: 18px;
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 40px;
-  vertical-align: middle;
-  text-decoration: none;
-  color: #000000;
-  box-sizing: content-box;
-}
-a.lbtn-blue:hover {
-  cursor: pointer;
-}
 .lbtn-blue {
-  padding: 0 8px;
   min-width: 90px;
-  height: 40px;
   background-color: white;
-  border: 1px solid #1e90ff;
+  border: 1px solid #1e90ff !important;
   border-radius: 18px;
-  box-sizing: content-box;
   cursor: pointer;
 }
 .lbtn-blue-solid {
@@ -137,7 +95,7 @@ a.lbtn-blue:hover {
 
 .lbtn-blue:hover {
   background-color: #1e90ff;
-  color: white;
+  color: white !important;
 }
 
 .ntex {
@@ -449,7 +407,7 @@ footer p {
 
   .ltit {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 54px;
   }
 
@@ -459,62 +417,17 @@ footer p {
 
   .lbtn-light {
     min-width: 90px;
-    height: 40px;
     background-color: white;
     border: none;
     border-radius: 18px;
     box-shadow: 0px 2px 5px rgb(197, 197, 197);
-    box-sizing: content-box;
-    padding: 0 8px;
-    cursor: pointer;
-  }
-  a.lbtn-light {
-    min-width: 90px;
-    height: 40px;
-    background-color: white;
-    border: none;
-    border-radius: 18px;
-    box-shadow: 0px 2px 5px rgb(197, 197, 197);
-    box-sizing: content-box;
-    padding: 0 8px;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    line-height: 40px;
-    vertical-align: middle;
-    text-decoration: none;
-    color: #000000;
-  }
-  a.lbtn-light:hover {
-    color: #000;
-  }
-  a.lbtn-blue {
-    min-width: fit-content;
-    height: min-content;
-    background-color: white;
-    border: 1px solid #1e90ff;
-    border-radius: 18px;
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 40px;
-    vertical-align: middle;
-    text-decoration: none;
-    color: #000000;
-    box-sizing: content-box;
-    word-break: keep-all;
-    display: inline-block;
-  }
-  a.lbtn-blue:hover {
     cursor: pointer;
   }
   .lbtn-blue {
-    padding: 0 8px;
     min-width: 90px;
-    height: 40px;
     background-color: white;
     border: 1px solid #1e90ff;
     border-radius: 18px;
-    box-sizing: content-box;
     cursor: pointer;
   }
   .lbtn-blue:hover {
