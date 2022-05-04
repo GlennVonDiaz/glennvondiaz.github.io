@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="assets/jquery/jquery-3.6.0.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js" defer></script>
+
+    <link rel="stylesheet" href="assets/swal/sweetalert2.min.css">
+    <script src="assets/swal/sweetalert2.all.min.js" defer></script>
+
+    <script src="assets/js/script.js"></script>
+
+    <style>
+        .lhead {
+            padding: 2rem 1rem;
+        }
+
+        .lbody {
+            padding: 1rem 1rem 3rem 1rem;
+        }
+
+        .lblue-card>.row>.col {
+            display: block !important;
+        }
+
+        .lblue-card {
+            width: 100%;
+            background-color: rgba(30, 144, 255, .4);
+        }
+
+        .left-crd .crd-title {
+            margin: 0;
+        }
+
+        .left-crd {
+            margin-bottom: 2rem;
+        }
+
+        ol {
+            padding-left: .7rem;
+        }
+
+        .jtyerf {
+            color: #1e90ff;
+        }
+
+        .crd-sub-content {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .form-control {
+            border: #1e90ff 1px solid;
+        }
+
+        .lbody>.row>.col-lg-8 {
+            margin-bottom: 1.5rem;
+        }
+
+
+        .font-sm {
+            font-size: 14px;
+        }
+
+        .lform-group {
+            margin-bottom: 1rem;
+        }
+
+        td {
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        tr {
+            border-bottom: 1px solid #1e90ff;
+        }
+
+        tr:first-child {
+            border-bottom: 2px solid black;
+
+        }
+
+        .statssss {
+            display: flex;
+            align-items: center;
+        }
+
+        .lusrname.hefw {
+            display: inline;
+            font-size: 28px;
+            margin: 0;
+            text-transform: capitalize;
+        }
+
+        .statssss>span.badge {
+            margin-left: 1rem;
+        }
+
+        .lcard-blue>.lcard-body {
+            padding: 1rem 1.5rem;
+        }
+
+        .domisili-form {
+            margin: 0;
+        }
+
+        .crd-title {
+            color: #1e90ff;
+            margin: 0 0 .5rem 0;
+            font-size: 14px;
+        }
+
+        .crd-content-sect {
+            margin-bottom: 1rem;
+        }
+
+        .crd-content-sect:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 992px) {
+            .lhead {
+                padding: 3rem 4rem;
+            }
+
+            .lbody {
+                padding: 0rem 4rem 3rem 4rem;
+            }
+
+            [data-step-strep] {
+                width: 7rem
+            }
+
+
+            .rfeyr {
+                display: flex;
+                justify-content: end;
+            }
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="lnav">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col left-lnav h-100">
+                    <img src="assets/logo/pemda-diy.png" class="lnav-brand" alt="gambar">
+                    <h1 class="ms-4 ltit">DINAS DIKPORA DIY</h1>
+                </div>
+                <div class="col">
+                    <div class="ldropdown">
+                        <button class="lbtn-light">Menu <i class="bi bi-chevron-down"></i></button>
+                        <div class="ldropdown-content d-none">
+                            <ul>
+                                <li class="menu-list"><a href="dashboard.html">Dashboard</a></li>
+                                <li class="menu-list"><a href="profile.html">Profile</a></li>
+                                <li class="menu-list"><a href="pengecekanDataDomisili.html">Pengecekan Data Domisili</a>
+                                </li>
+                                <li class="menu-list"><a href="pengubahanDataDomisili.html">Pengajuan Perubahan Data
+                                        Domisili</a></li>
+                                <li class="menu-list"><a href="help.html">Bantuan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="lbtn-blue" href="!! logout !!" id="lo-btn"><i class="bi bi-box-arrow-right"></i> LOG
+                        OUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="spacing-nav"></div>
+
+    <div class="lhead">
+        <h3 class="title-section2">Input Data Siswa Lulusan Luar DIY & Lulusan Dalam DIY Sebelum Tahun 2022</h3>
+        <h6 class="title-sub-section">Silahkan siapkan data – data anda sesuai rapor dan siapkan data informasi
+            akreditasi asal sekolah Anda. Jika belum memiliki nilai angka akreditasi sekolah, silahkan menghubungi
+            sekolah dan meminta surat keterangan akreditasi sekolah yang mencantumkan nilai akreditasi sekolah dalam
+            bentuk huruf dan angka.
+
+        </h6>
+    </div>
+
+    <div class="lbody">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="lcard-blue">
+                    <div class="lcard-head">
+                        <div class="row">
+                            <div class="col-md-6 statssss">
+                                <h2 class="lusrname hefw">Status : </h2>
+                                <span class="badge lbadge-merah d-inline">Ditolak</span>
+                            </div>
+                            <div class="col-lg-6 rfeyr">
+                                <a href="" class="btn lbtn-blue-solid rounded-pill">Ubah</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lcard-body">
+                        <div class="row">
+                            <div class="col">
+                                <form class="domisili-form" action="">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row left-crd">
+                                                <div class="col-lg-4">
+                                                    <p class="crd-title">Lokasi Sekolah</p>
+                                                    <p class="crd-sub-content">Jl. Imogiri Timur km 12</p>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <p class="crd-title">Jenis Kelamain</p>
+                                                    <p class="crd-sub-content">Laki - Laki</p>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <p class="crd-title">Nama Ibu Kandung</p>
+                                                    <p class="crd-sub-content">Suminah</p>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tr>
+                                                        <th>Mapel</th>
+                                                        <th>Semester 1</th>
+                                                        <th>Semester 2</th>
+                                                        <th>Semester 3</th>
+                                                        <th>Semester 4</th>
+                                                        <th>Semester 5</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bahasa Indonesia</td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bahasa Inggris</td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Matematika</td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IPA</td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                        <td><input type="text" class="form-control" name="" id=""
+                                                                readonly></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="lcard-blue">
+                    <div class="lcard-head">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="lusrname hefw">Berkas Unggahan</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lcard-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <p class="crd-title">Rapor SMP/MTS Semester 1</p>
+                                    <span class="badge lbadge-ijo d-inline">Terunggah</span>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="crd-title">Rapor SMP/MTS Semester 2</p>
+                                    <span class="badge lbadge-ijo d-inline">Terunggah</span>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="crd-title">Rapor SMP/MTS Semester 3</p>
+                                    <span class="badge lbadge-ijo d-inline">Terunggah</span>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="crd-title">Rapor SMP/MTS Semester 4</p>
+                                    <span class="badge lbadge-ijo d-inline">Terunggah</span>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="crd-title">Rapor SMP/MTS Semester 5</p>
+                                    <span class="badge lbadge-ijo d-inline">Terunggah</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <p class="crd-title">Surat Rekomendasi Afirmasi</p>
+                                    <span class="badge lbadge-ijo d-inline">Terunggah</span>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="crd-title">Surat Rekomendaso Prestasi Non Akademik</p>
+                                    <span class="badge lbadge-ijo d-inline">Terunggah</span>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="crd-title">Surat Rekomendasi Perpindahan Tugas Ortu / Wali</p>
+                                    <span class="badge lbadge-ijo d-inline">Terunggah</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p>@2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

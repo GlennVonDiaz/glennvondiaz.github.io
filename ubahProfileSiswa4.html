@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="assets/jquery/jquery-3.6.0.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js" defer></script>
+
+    <link rel="stylesheet" href="assets/swal/sweetalert2.min.css">
+    <script src="assets/swal/sweetalert2.all.min.js" defer></script>
+
+    <script src="assets/js/script.js"></script>
+
+    <style>
+        .crd-cntn-title>h2 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .crd-cntn-title>p {
+            color: rgb(170, 170, 170);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .lform-group>label {
+            font-weight: bold;
+        }
+
+        .lhead {
+            padding: 2rem 1rem;
+        }
+
+        .lbody {
+            padding: 1rem 1rem 3rem 1rem;
+        }
+
+        @media (min-width: 992px) {
+            .lhead {
+                padding: 3rem 4rem;
+            }
+
+            .lbody {
+                padding: 0rem 4rem 3rem 4rem;
+            }
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="lnav">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col left-lnav h-100">
+                    <img src="assets/logo/pemda-diy.png" class="lnav-brand" alt="gambar">
+                    <h1 class="ms-4 ltit">DINAS DIKPORA DIY</h1>
+                </div>
+                <div class="col">
+                    <div class="ldropdown">
+                        <button class="lbtn-light">Menu <i class="bi bi-chevron-down"></i></button>
+                        <div class="ldropdown-content d-none">
+                            <ul>
+                                <li class="menu-list"><a href="dashboard.html">Dashboard</a></li>
+                                <li class="menu-list"><a href="profile.html">Profile</a></li>
+                                <li class="menu-list"><a href="pengecekanDataDomisili.html">Pengecekan Data Domisili</a>
+                                </li>
+                                <li class="menu-list"><a href="pengubahanDataDomisili.html">Pengajuan Perubahan Data
+                                        Domisili</a></li>
+                                <li class="menu-list"><a href="help.html">Bantuan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="lbtn-blue" href="!! logout !!" id="lo-btn"><i class="bi bi-box-arrow-right"></i> LOG
+                        OUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="spacing-nav"></div>
+
+    <div class="lhead">
+        <h3 class="title-section2">Ubah Profile Siswa</h3>
+        <h6 class="title-sub-section">Mohon teliti dalam mengisi profil.</h6>
+    </div>
+
+    <div class="lbody">
+        <div class="lcard-blue">
+            <div class="lcard-head">
+                <div class="form-step">
+                    <span data-form-step="true">
+                        <p>1</p>
+                    </span>
+                    <span data-step-strep="true"></span>
+                    <span data-form-step="true">
+                        <p>2</p>
+                    </span>
+                    <span data-step-strep="true"></span>
+                    <span data-form-step="true">
+                        <p>3</p>
+                    </span>
+                    <span data-step-strep="true"></span>
+                    <span data-form-step="true">
+                        <p>4</p>
+                    </span>
+                </div>
+            </div>
+            <div class="lcard-body">
+                <div class="row">
+                    <div class="col">
+                        <form class="domisili-form" action="">
+                            <div class="row">
+                                <div class="col crd-cntn-title">
+                                    <h2>File KK (KK yang digunakan dalam proses verifikasi maksimal tanggal 31 Desember
+                                        2020.)
+                                    </h2>
+                                    <p>Jika Anda melakukan perubahan KK setelah 31 Des 2020, maka scan/foto file KK lama
+                                        berurutan dengan KK baru dan upload sebagai 1 file.</p>
+                                    <p>Dokumen yang perlu diunggah dalam format PDF (.PDF) dan maksimal file upload 2
+                                        mb.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="lform-group mb-3">
+                                        <label for="">Kartu Keluarga</label>
+                                        <input class=" form-control mb-2" type="file" name="" id="" placeholder="">
+                                    </div>
+                                    <div class="lform-group">
+                                        <label for="">Surat Kelulusan</label>
+                                        <input class="form-control mb-2" type="file" name="" id="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <a href="ubahProfileSiswa2.html"
+                                        class="btn lbtn-yellow-solid rounded-pill">Kembali</a>
+                                    <button class="btn lbtn-blue-solid rounded-pill ms-3"
+                                        id="ubahDataProfile">Simpan</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p>@2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

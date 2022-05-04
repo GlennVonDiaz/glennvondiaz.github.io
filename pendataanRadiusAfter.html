@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="assets/jquery/jquery-3.6.0.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js" defer></script>
+
+    <link rel="stylesheet" href="assets/swal/sweetalert2.min.css">
+    <script src="assets/swal/sweetalert2.all.min.js" defer></script>
+
+    <script src="assets/js/script.js"></script>
+
+    <style>
+        .statssss {
+            display: flex;
+            align-items: center;
+        }
+
+        .lusrname.hefw {
+            display: inline;
+            font-size: 28px;
+            margin: 0;
+            text-transform: capitalize;
+        }
+
+        .lbody {
+            padding: 0 1rem 2rem 1rem;
+        }
+
+        .statssss>span.badge {
+            margin-left: 1rem;
+        }
+
+        .crd-title {
+            color: #1e90ff;
+            margin: 0 0 .5rem 0;
+            font-size: 14px;
+        }
+
+        .crd-content-sect {
+            margin-bottom: 1rem;
+        }
+
+        .crd-content-sect:last-child {
+            margin-bottom: 0;
+        }
+
+        .lbody>.row>.col-lg-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .lbody>.row>.col-lg-6:last-child {
+            margin-bottom: 0;
+        }
+
+        .lhead {
+            padding: 2rem 1rem 1rem 1rem;
+        }
+
+
+
+
+        @media (min-width: 992px) {
+            .lbody {
+                padding: 0 3rem 2rem 3rem;
+            }
+
+            .rfeyr {
+                display: flex;
+                justify-content: end;
+            }
+
+            .lhead {
+                padding: 2rem 3rem;
+            }
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="lnav">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col left-lnav h-100">
+                    <img src="assets/logo/pemda-diy.png" class="lnav-brand" alt="gambar">
+                    <h1 class="ms-4 ltit">DINAS DIKPORA DIY</h1>
+                </div>
+                <div class="col">
+                    <div class="ldropdown">
+                        <button class="lbtn-light">Menu <i class="bi bi-chevron-down"></i></button>
+                        <div class="ldropdown-content d-none">
+                            <ul>
+                                <li class="menu-list"><a href="dashboard.html">Dashboard</a></li>
+                                <li class="menu-list"><a href="profile.html">Profile</a></li>
+                                <li class="menu-list"><a href="pengecekanDataDomisili.html">Pengecekan Data Domisili</a>
+                                </li>
+                                <li class="menu-list"><a href="pengubahanDataDomisili.html">Pengajuan Perubahan Data
+                                        Domisili</a></li>
+                                <li class="menu-list"><a href="help.html">Bantuan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="lbtn-blue" href="!! logout !!" id="lo-btn"><i class="bi bi-box-arrow-right"></i> LOG
+                        OUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="spacing-nav"></div>
+
+    <div class="main-content">
+        <div class="lhead">
+            <h3 class="title-section2">Pendataan Radius Tempat Tinggal Calon Peserta Didik</h3>
+            <h6 class="title-sub-section">bagi calon peserta didik yang tempat tinggalnya berada dalam radius 300 meter
+                dari sekolah.</h6>
+        </div>
+
+        <div class="lbody">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="lcard-blue">
+                        <div class="lcard-head">
+                            <div class="row">
+                                <div class="col-md-6 statssss">
+                                    <h2 class="lusrname hefw">Status : </h2>
+                                    <span class="badge lbadge-merah d-inline">Ditolak</span>
+                                </div>
+                                <div class="col-lg-6 rfeyr">
+                                    <a href="" class="btn lbtn-blue-solid rounded-pill">Ubah</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lcard-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="crd-content-sect">
+                                        <p class="crd-title">Sekolah Tujuan</p>
+                                        <h6>SMP 1 Imogiri</h6>
+                                    </div>
+                                    <div class="crd-content-sect">
+                                        <p class="crd-title">Jarak Rumah Ke Sekolah (m)</p>
+                                        <h6>40 m</h6>
+                                    </div>
+                                    <div class="crd-content-sect">
+                                        <p class="crd-title">Koordinat Rumah Latitude</p>
+                                        <h6>-7.918191</h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="crd-content-sect">
+                                        <p class="crd-title">Alamat Siswa</p>
+                                        <h6>Imogiri</h6>
+                                    </div>
+                                    <div class="crd-content-sect">
+                                        <p class="crd-title">Koordinat Rumah Longitude</p>
+                                        <h6>110.381484</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="lcard-blue">
+                        <div class="lcard-head">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="lusrname hefw">Berkas Unggahan</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lcard-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <p class="crd-title">Foto Rumah Tampak Depan</p>
+                                        <span class="badge lbadge-ijo d-inline">Terunggah</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p>@2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
