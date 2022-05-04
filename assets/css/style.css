@@ -191,6 +191,9 @@
   font-size: 34px;
   color: #1e90ff;
 }
+.lcard .row .col-2 > img {
+  height: 37px;
+}
 .lcard .row .col p {
   margin: 0;
   font-size: 13px;
@@ -406,7 +409,7 @@ footer p {
   }
 
   .ltit {
-    font-weight: 600;
+    font-weight: 760 !important;
     font-size: 32px;
     line-height: 54px;
   }
@@ -526,6 +529,9 @@ footer p {
     align-items: center;
     font-size: 34px;
     color: #1e90ff;
+  }
+  .lcard .row .col-2 > img {
+    height: 44px;
   }
   .lcard .row .col p {
     margin: 0;
