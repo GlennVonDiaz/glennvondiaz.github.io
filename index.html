@@ -5,18 +5,342 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <script src="assets/jquery/jquery-3.6.0.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js" defer></script>
+
+    <link rel="stylesheet" href="assets/swal/sweetalert2.min.css">
+    <script src="assets/swal/sweetalert2.all.min.js" defer></script>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="assets/js/script.js"></script>
 
     <title>Document</title>
 </head>
 
 <body>
-    <script>
-        $(document).ready(function () {
-            document.location = "dashboard.html";
-        });
-    </script>
+    <nav class="lnav">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <a class="col left-lnav h-100">
+                    <img src="assets/logo/pemda-diy.png" class="" alt="gambar">
+                    <h2 class="ms-2 ltit">DINAS DIKPORA DIY</h2>
+                </a>
+                <div class="col">
+                    <a href="juknispergub.html" class="m-0 fw-bold juknispergub">JUKNIS & PERGUB PPDB 2022</a>
+                    <a href="ceknik.html" class="btn lbtn-yellow-solid rounded-pill fw-bold">CEK NIK</a>
+                    <a href="login.html" class="btn lbtn-blue-solid rounded-pill fw-bold">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="spacing-nav"></div>
+
+    <div class="lbody">
+        <div class="row">
+            <div class="col-lg-6 jumbotron jumbotron-teks">
+                <div>
+                    <h2>SIVERI PPDB</h2>
+                    <h6>SISTEM INFORMASI VERIFIKASI PPDB SMA NEGERI DAN SMK NEGERI DIY</h6>
+                    <p>Merupakan Aplikasi Khusus untuk Pengajuan Verifikasi Dokumen Calon Peserta Didik dari Keluarga
+                        Tidak
+                        Mampu (Jalur Afirmasi), Penambahan Nilai Prestasi Non Akademik, Perpindahan Tugas Orang Tua/Wali
+                        dan
+                        Input Data (Input Data khusus Siswa Lulusan Luar DIY & Lulusan Dalam DIY Sebelum Tahun 2021).
+                        Calon
+                        Peserta Didik pada Jalur Zonasi TIDAK perlu membuat akun di aplikasi ini, silahkan langsung
+                        mendaftar di laman ppdb.jogjaprov.go.id mulai tanggal 21 Juni 2022.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 jumbotron jumbotron-img">
+                <div>
+                    <img src="assets/img/Illustration_1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <a href="login.html" class="btn lbtn-light me-3">Masuk</a>
+                    <a href="register.html" class="btn lbtn-blue-solid">Daftar</a>
+                </div>
+            </div>
+        </div>
+        <div class="row lmt-4">
+            <div class="col">
+                <h2 class="section-title">Panduan Verifikasi dan Input Data</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6 col-lg crd-container">
+                <div class="lcard-light" data-card-count="1">
+                    <div>
+                        <img src="assets/icons/work-circle.svg" alt="">
+                        <h2>PENGURUSAN REKOMENDASI KELUARGA TIDAK MAMPU</h2>
+                        <p>Verifikasi dokumen untuk surat rekomendasi keluarga tidak mampu.</p>
+                    </div>
+                    <div class="btn-div">
+                        <a href="" class="btn lbtn-blue-solid rounded-pill">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg crd-container">
+                <div class="lcard-light" data-card-count="2">
+                    <div>
+                        <img src="assets/icons/star-circle.svg" alt="">
+                        <h2>PENAMBAHAN NILAI PRESTASI NON AKADEMIK</h2>
+                        <p>Verifikasi dokumen untuk penambahan nilai non akadmik.</p>
+                    </div>
+                    <div class="btn-div">
+                        <a href="" class="btn lbtn-ijo-solid rounded-pill">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg crd-container">
+                <div class="lcard-light" data-card-count="3">
+                    <div>
+                        <img src="assets/icons/location-circle.svg" alt="">
+                        <h2>PENGURUSAN REKOMENDASI PERPINDAHAN TUGAS</h2>
+                        <p>Verifikasi dokumen untuk surat rekomendasi perpindahan tugas orang tua.</p>
+                    </div>
+                    <div class="btn-div">
+                        <a href="" class="btn lbtn-orange-solid rounded-pill">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg crd-container">
+                <div class="lcard-light" data-card-count="4">
+                    <div>
+                        <img src="assets/icons/data-circle.svg" alt="">
+                        <h2>INPUT DATA SISWA</h2>
+                        <p>Input data KHUSUS bagi calon siswa Lulusan Luar DIY dan Lulusan Dalam DIY sebelum th 2022.
+                        </p>
+                    </div>
+                    <div class="btn-div">
+                        <a href="" class="btn lbtn-purple-solid rounded-pill">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg crd-container">
+                <div class="lcard-light" data-card-count="5">
+                    <div>
+                        <img src="assets/icons/check-circle.svg" alt="">
+                        <h2>CEK NIK</h2>
+                        <p>Cek data domisili untuk calon siswa berdomisli di dalam wilayah DIY.</p>
+                    </div>
+                    <div class="btn-div">
+                        <a href="" class="btn lbtn-blue-solid rounded-pill">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="lbody">
+        <div class="row mb-4">
+            <div class="col-8 col-lg-11">
+                <h4>Pengumuman</h4>
+            </div>
+            <div class="col-4 col-lg-1 slider-control">
+                <img src="assets/icons/Arrow-Left-Square.svg" id="previous-slide-pe" alt="">
+                <img src="assets/icons/Arrow-Right-Square.svg" id="next-slide-pe" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="">
+                    <h5>Pendaftaran dan Pelaksanaan ASPD 24 - 28 Mei 2022</h5>
+                    <p>Proses ASPD khusus bagi peserta didik LULUSAN LUAR DIY dan Lulusan DALAM DIY SEBELUM Th 2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="lbody bubble-?">
+        <div class="row">
+            <div class="col">
+                <h2 class="section-title">Jadwal</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width: 40px">No</th>
+                                <th style="width: 600px;">Proses</th>
+                                <th>Waktu & Tempat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p>ASPD</p>
+                                    <p>(khusus bagi yang belum mengikuti ASPD DIY)</p>
+                                </td>
+                                <td>
+                                    Online di laman <a href="aspd.jogjacbt.web.id"
+                                        target="_blank">aspd.jogjacbt.web.id</a> <br>
+                                    Pendaftaran: <br>
+                                    30 Mei – 2 Juni <br>
+                                    Pelaksanaan: <br>
+                                    13 – 16 Juni
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    Pengecekan Data Kependudukan <br>
+                                    (CEK NIK)
+                                </td>
+                                <td>
+                                    Online <br>
+                                    Dinas DIKPORA <br>
+                                    6-9 Juni
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    Pendataan Radius Tempat Tinggal Calon Peserta Didik
+                                    (Khusus peserta didik yang tempat tinggalnya berada dalam radius 300 meter dari
+                                    sekolah)
+                                </td>
+                                <td>
+                                    Online <br>
+                                    Dinas DIKPORA <br>
+                                    6-9 Juni
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    Verifikasi Dokumen Perpindahan Tugas Ortu/Wali
+                                </td>
+                                <td>
+                                    Online <br>
+                                    Dinas DIKPORA <br>
+                                    6-9 Juni
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    Verifikasi Dokumen Penambahan Nilai Prestasi Non Akademik
+                                </td>
+                                <td>
+                                    Online <br>
+                                    Dinas DIKPORA <br>
+                                    6-9 Juni
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    Verifikasi Dokumen Jalur Afirmasi
+                                    (Keluarga Tidak Mampu)
+                                </td>
+                                <td>
+                                    Online <br>
+                                    Balai DIKMEN <br>
+                                    6-9 Juni
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    Input Data Siswa Lulusan Luar DIY dan Lulusan Dalam DIY Sebelum Tahun 2022
+                                </td>
+                                <td>
+                                    Online <br>
+                                    Dinas & Balai DIKMEN <br>
+                                    13-18 Juni
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>
+                                    Ajuan Akun dan Pengambilan PIN/TOKEN
+                                </td>
+                                <td>
+                                    Online <br>
+                                    20-23 Juni
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>
+                                    Pemilihan Sekolah/Peminatan
+                                </td>
+                                <td>
+                                    Online <br>
+                                    27-29 Juni
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>
+                                    Seleksi Online Realtime
+                                </td>
+                                <td>
+                                    Online <br>
+                                    27-30 Juni
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>
+                                    Pengumuman
+                                </td>
+                                <td>
+                                    Online & di masing-masing Sekolah <br>
+                                    1 Juli
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>
+                                    Daftar Ulang
+                                </td>
+                                <td>
+                                    Di masing-masing Sekolah <br>
+                                    1,4,5 dan 6 Juli
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p>@2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
