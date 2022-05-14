@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
 
     <title>Document</title>
 </head>
@@ -72,7 +72,7 @@
             <div class="col">
                 <div>
                     <a href="login.html" class="btn lbtn-light me-3">Masuk</a>
-                    <a href="register.html" class="btn lbtn-blue-solid">Daftar</a>
+                    <a href="register2.html" class="btn lbtn-blue-solid">Daftar</a>
                 </div>
             </div>
         </div>
@@ -90,7 +90,123 @@
                         <p>Verifikasi dokumen untuk surat rekomendasi keluarga tidak mampu.</p>
                     </div>
                     <div class="btn-div">
-                        <a href="" class="btn lbtn-blue-solid rounded-pill">Selengkapnya</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn lbtn-blue-solid rounded-pill" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Verifikasi Dokumen Jalur Afirmasi
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-start">Jalur Afirmasi merupakan jalur yang diperuntukan bagi calon
+                                        peserta didik dari keluarga ekonomi tidak mampu. Dokumen yang perlu diunggah
+                                        dalam format PDF atau Gambar (jpg / jpeg / png) khusus untuk Verifikasi dokumen
+                                        jalur afirmasi adalah <strong>Bukti keikutsertaan dalam program penanganan
+                                            keluarga tidak mampu yang dilekuarkan oleh Dinas Sosial
+                                            Kabupaten/Kota</strong> dengan Maksimal file upload sebesar 2MB, Bukti
+                                        keikutsertaan yang diakui yaitu:
+                                    </p>
+                                    <ul class="text-start">
+                                        <li><strong>Kab. Bantul</strong>
+                                            <ol>
+                                                <li>DTKS / BDT</li>
+                                                <li>PKH</li>
+                                                <li>BPNT</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>Kab. Gunungkidul</strong>
+                                            <ol>
+                                                <li>DTKS / BDT</li>
+                                                <li>PKH</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>Kab. Kulon Progo</strong>
+                                            <ol>
+                                                <li>DTKS / BDT</li>
+                                                <li>PKH</li>
+                                                <li>SuKet DINSOS (kolektif sekolah), untuk data calon peserta didik yang
+                                                    tercantum DTKS.</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>Kab. Sleman</strong>
+                                            <ol>
+                                                <li>DTKS / BDT</li>
+                                                <li>PKH</li>
+                                                <li>KKRM</li>
+                                                <li>KKM</li>
+                                                <li>Surat Keterangan Pengganti KKM/KKRM</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>Kota Yogyakarta</strong>
+                                            <ol>
+                                                <li>DTKS / BDT</li>
+                                                <li>PKH</li>
+                                                <li>KMS</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                    <p class="text-start">Bukti adalah berupa kartu kepesertaan layanan yang
+                                        bersangkutan. Bukti DTKS/BDT dapat berupa tangkapan layar (screenshot) data di
+                                        aplikasi sistem informasi DTKS sesuai NIK Orang Tua Calon Peserta Didik, yang
+                                        kemudian diunggah di laman verifikasi dokumen ini. Screenshot dapat diperoleh
+                                        dengan mengakses sistem informasi DTKS/BDT di laman <a
+                                            href="https://cekbansos.kemensos.go.id/" target="_blank"
+                                            style="word-break:break-all">cekbansos.kemensos.go.id</a></p>
+                                    <li class="text-start">
+                                        <strong>Panduan Pengurusan Rekomendasi Siswa Dari Keluarga Tidak Mampu
+                                            :</strong>
+                                        <ol>
+                                            <li>
+                                                Klik <b>Login</b>. Jika belum memiliki akun klik tombol <b>Daftar</b>
+                                                untuk membuat akun baru.
+                                            </li>
+                                            <li>
+                                                Lengkapi data yang dibutuhkan saat membuat akun.
+                                            </li>
+                                            <li>
+                                                Jika sudah login. Silahkan cek data yang sudah ada, jika ada data yang
+                                                salah silahkan melakukan perubahan data dengan cara klik <b>Ubah
+                                                    Profil</b>, jika data sudah benar lakukan langkah selanjutnya.
+                                            </li>
+                                            <li>
+                                                Klik <b>Menu Verifikasi Dokumen Jalur Afirmasi.</b>
+                                            </li>
+                                            <li>
+                                                Unggah Bukti Kepesertaan program penanganan kemiskinan/keluarga tidak
+                                                mampu yg diterbitkan Dinas Sosial sesuai tabel di atas. Pastikan KK dan
+                                                ijazah/SKL Anda juga sudah diunggah saat membuat akun.
+                                            </li>
+                                            <li>
+                                                Pengajuan Anda selesai. Silahkan pantau terus status pengajuan Anda
+                                                melalui dashboard siswa
+                                            </li>
+                                            <li>
+                                                Jika pengajuan ditolak, Anda dapat melakukan revisi atau pengajuan ulang
+                                                sesuai arahan dari panitia, seperti yang tercantum pada alasan penolakan
+                                                pengajuan sebelumnya
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <!-- <p>Lihat tutorial membuat dokumen PDF. <a href="<?= base_url(); ?>tutorial-pdf">Klik disini</a></p>
+                                  <p>Lihat Juknis PPDB 2020 <a href="<?= base_url(); ?>juknis">Klik disini</a></p>
+                                  <p>Lihat PERGUB PPDB 2020 <a href="<?= base_url(); ?>pergub">Klik disini</a></p>
+                                  <p>Lihat Jadwal PPDB 2020 <a href="<?= base_url(); ?>jadwal">Klik disini</a></p> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +218,75 @@
                         <p>Verifikasi dokumen untuk penambahan nilai non akadmik.</p>
                     </div>
                     <div class="btn-div">
-                        <a href="" class="btn lbtn-ijo-solid rounded-pill">Selengkapnya</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn lbtn-ijo-solid rounded-pill" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">
+                            Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Verifikasi Dokumen Penambahan Nilai
+                                        Prestasi Non Akademik</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-start">Dokumen yang perlu diunggah dalam format PDF khusus untuk
+                                        Verifikasi Dokumen Penambahan Nilai Prestasi Non Akademik adalah :
+                                        <strong>Sertifikat Kejuaraan / Lomba</strong> Setiap calon peserta didik hanya
+                                        diperkenankan mengajukan 1 dokumen saja. Ketika pengajuan telah diterima dan
+                                        disetujui, panitia PPDB tidak menerima permintaan penggantian Sertifikat
+                                        Kejuaraan / Lomba.
+                                    </p>
+                                    <p class="text-start">Maksimal file upload 2MB</p>
+                                    <li class="text-start">
+                                        <strong>Panduan Penambahan Nilai Prestasi Non Akademik :</strong>
+                                        <ol>
+                                            <li>
+                                                Klik <b>Login</b>. Jika belum memiliki akun klik tombol <b>Daftar</b>
+                                                untuk membuat akun baru.
+                                            </li>
+                                            <li>
+                                                Lengkapi data yang dibutuhkan saat membuat akun.
+                                            </li>
+                                            <li>
+                                                Jika sudah login. Silahkan cek data yang sudah ada, jika ada data yang
+                                                salah silahkan melakukan perubahan data dengan cara klik <b>Ubah
+                                                    Profil</b>, jika data sudah benar lakukan langkah selanjutnya.
+                                            </li>
+                                            <li>
+                                                Klik menu<b> Verifikasi Dokumen Penambahan Nilai Prestasi Non
+                                                    Akademik</b>.
+                                            </li>
+                                            <li>
+                                                Lengkapi data-data yang diperlukan.
+                                            </li>
+                                            <li>
+                                                Pengajuan Anda selesai. Silahkan pantau terus status pengajuan Anda
+                                                melalui dashboard siswa
+                                            </li>
+                                            <li>
+                                                Jika pengajuan ditolak, Anda dapat melakukan revisi atau pengajuan ulang
+                                                sesuai arahan dari panitia, seperti yang tercantum pada alasan penolakan
+                                                pengajuan sebelumnya
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <!-- <p>Lihat tutorial membuat dokumen PDF. <a href="<?= base_url(); ?>tutorial-pdf">Klik disini</a></p>
+                                  <p>Lihat Juknis PPDB 2020 <a href="<?= base_url(); ?>juknis">Klik disini</a></p>
+                                  <p>Lihat PERGUB PPDB 2020 <a href="<?= base_url(); ?>pergub">Klik disini</a></p>
+                                  <p>Lihat Jadwal PPDB 2020 <a href="<?= base_url(); ?>jadwal">Klik disini</a></p> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,7 +298,77 @@
                         <p>Verifikasi dokumen untuk surat rekomendasi perpindahan tugas orang tua.</p>
                     </div>
                     <div class="btn-div">
-                        <a href="" class="btn lbtn-orange-solid rounded-pill">Selengkapnya</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn lbtn-orange-solid rounded-pill" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">
+                            Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Verifikasi Dokumen Perpindahan Tugas
+                                        Ortu/Wali</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-start">Dokumen yang perlu diunggah dalam format PDF khusus untuk
+                                        Perpindahan Tugas Ortu/Wali adalah :</p>
+                                    <ol class="text-start">
+                                        <li>Surat/Keputusan Perpindahan tugas dari instansi, lembaga, kantor, atau
+                                            perusahaan yang mempekerjakan, paling lama 4 (empat) tahun terakhir sebelum
+                                            pelaksanaan PPDB.</li>
+                                        <li>Khusus bagi anak guru, wajib menyertakan juga Surat/Keputusan dari Pejabat
+                                            Pembina Kepegawaian yang menyatakan guru tersebut bertugas di sekolah yang
+                                            bersangkutan khusus bagi anak guru SMA/SMK NEGERI. Contoh SK Gubernur.</li>
+                                    </ol>
+                                    <p class="text-start">Maksimal file upload sebesar 2MB </p>
+                                    <li class="text-start">
+                                        <strong>Panduan Pengurusan Rekomendasi Perpindahan Tugas Ortu / Wali :</strong>
+                                        <ol>
+                                            <li>
+                                                Klik <b>Login</b>. Jika belum memiliki akun klik tombol <b>Daftar</b>
+                                                untuk membuat akun baru.
+                                            </li>
+                                            <li>
+                                                Lengkapi data yang dibutuhkan saat membuat akun.
+                                            </li>
+                                            <li>
+                                                Jika sudah login. Silahkan cek data yang sudah ada, jika ada data yang
+                                                salah silahkan melakukan perubahan data dengan cara klik <b>Ubah
+                                                    Profil</b>, jika data sudah benar lakukan langkah selanjutnya.
+                                            </li>
+                                            <li>
+                                                Klik menu <b>Verifikasi Dokumen Perpindahan Tugas Ortu / Wali.</b>
+                                            </li>
+                                            <li>
+                                                Lengkapi data-data yang diperlukan.
+                                            </li>
+                                            <li>
+                                                Pengajuan Anda selesai. Silahkan pantau terus status pengajuan Anda
+                                                melalui dashboard siswa
+                                            </li>
+                                            <li>
+                                                Jika pengajuan ditolak, Anda dapat melakukan revisi atau pengajuan ulang
+                                                sesuai arahan dari panitia, seperti yang tercantum pada alasan penolakan
+                                                pengajuan sebelumnya
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <!-- <p>Lihat tutorial membuat dokumen PDF. <a href="<?= base_url(); ?>tutorial-pdf">Klik disini</a></p>
+                                  <p>Lihat Juknis PPDB 2020 <a href="<?= base_url(); ?>juknis">Klik disini</a></p>
+                                  <p>Lihat PERGUB PPDB 2020 <a href="<?= base_url(); ?>pergub">Klik disini</a></p>
+                                  <p>Lihat Jadwal PPDB 2020 <a href="<?= base_url(); ?>jadwal">Klik disini</a></p> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,7 +381,86 @@
                         </p>
                     </div>
                     <div class="btn-div">
-                        <a href="" class="btn lbtn-purple-solid rounded-pill">Selengkapnya</a>
+                        <button type="button" class="btn lbtn-purple-solid rounded-pill" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal4">
+                            Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Input Data Siswa Lulusan Luar DIY &
+                                        Lulusan Dalam DIY Sebelum Tahun 2021</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <p>Silahkan siapkan data – data Anda sesuai rapor dan siapkan data informasi
+                                        akreditasi asal sekolah Anda. Jika belum memiliki nilai angka akreditasi
+                                        sekolah, silahkan menghubungi sekolah dan meminta surat keterangan akreditasi
+                                        sekolah yang mencantumkan nilai akreditasi sekolah dalam bentuk huruf dan angka.
+                                        atau cek nilai akreditasi sekolah Anda melalui <a
+                                            href="http://bansm.kemdikbud.go.id" target="_blank"
+                                            style="word-break:break-all">bansm.kemdikbud.go.id</a>.</p>
+                                    <p>Dokumen yang perlu diunggah dalam format PDF:</p>
+                                    <ol>
+                                        <li>Surat Keterangan Akreditasi Sekolah</li>
+                                        <li>Rapor Semester 1 - 5</li>
+                                        <li>Surat Rekomendasi Afirmasi <small class="text-muted"><em>( jika ada
+                                                    )</em></small></li>
+                                        <li>Surat Rekomendasi Penambahan Nilai Prestasi non-akademik <small
+                                                class="text-muted"><em>( jika ada )</em></small></li>
+                                        <li>Surat Rekomendasi Perpindahan Tugas Orang Tua / Wali <small
+                                                class="text-muted"><em>( jika ada )</em></small></li>
+                                    </ol>
+                                    <p>Maksimal file upload sebesar 2MB </p>
+                                    <li>
+                                        <strong>Panduan Input Data Siswa Lulusan Luar DIY & Lulusan Dalam DIY Sebelum
+                                            Tahun 2021 :</strong>
+                                        <ol>
+                                            <li>
+                                                Klik <b>Login</b>. Jika belum memiliki akun klik tombol <b>Daftar</b>
+                                                untuk membuat akun baru.
+                                            </li>
+                                            <li>
+                                                Lengkapi data yang dibutuhkan saat membuat akun.
+                                            </li>
+                                            <li>
+                                                Jika sudah login. Silahkan cek data yang sudah ada, jika ada data yang
+                                                salah silahkan melakukan perubahan data dengan cara klik <b>Ubah
+                                                    Profil</b>, jika data sudah benar lakukan langkah selanjutnya.
+                                            </li>
+                                            <li>
+                                                Klik menu <b>Input Data Siswa Lulusan Luar DIY & Lulusan Dalam DIY
+                                                    Sebelum Tahun 2021</b>.
+                                            </li>
+                                            <li>
+                                                Lengkapi data-data yang dibutuhkan
+                                            </li>
+                                            <li>
+                                                Pengajuan Anda selesai. Silahkan pantau terus status pengajuan Anda
+                                                melalui dashboard siswa
+                                            </li>
+                                            <li>
+                                                Jika pengajuan ditolak, Anda dapat melakukan revisi atau pengajuan ulang
+                                                sesuai arahan dari panitia, seperti yang tercantum pada alasan penolakan
+                                                pengajuan sebelumnya
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <!-- <p>Lihat tutorial membuat dokumen PDF. <a href="<?= base_url(); ?>tutorial-pdf">Klik disini</a></p>
+                                  <p>Lihat Juknis PPDB 2020 <a href="<?= base_url(); ?>juknis">Klik disini</a></p>
+                                  <p>Lihat PERGUB PPDB 2020 <a href="<?= base_url(); ?>pergub">Klik disini</a></p>
+                                  <p>Lihat Jadwal PPDB 2020 <a href="<?= base_url(); ?>jadwal">Klik disini</a></p> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,7 +472,42 @@
                         <p>Cek data domisili untuk calon siswa berdomisli di dalam wilayah DIY.</p>
                     </div>
                     <div class="btn-div">
-                        <a href="" class="btn lbtn-blue-solid rounded-pill">Selengkapnya</a>
+                        <button type="button" class="btn lbtn-blue-solid rounded-pill" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5">
+                            Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Cek data domisili untuk calon siswa
+                                        berdomisili di dalam wilayah DIY.</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <p>CEK NIK digunakan oleh calon peserta didik yang berdomisili di dalam wilayah DIY.
+                                    </p>
+                                    <p>Cara melakukan pengecekan NIK:
+                                    <ol>
+                                        <li>Klik tombol <b>CEK NIK.</b> </li>
+                                        <li>Masukkan NIK Anda. Klik tombol <b>CEK NIK</b>.</li>
+                                        <li>Cek data Anda apakah sudah benar.</li>
+                                        <li>Jika data sesuai, maka proses Cek NIK selesai.</li>
+                                        <li>Jika data tidak sesuai dengan berkas KK Anda, silahkan login/daftar akun dan
+                                            ajukan permohonan perubahan data domisili dengan cara klik menu <b>PENGAJUAN
+                                                PERUBAHAN DATA DOMISILI</b>.</li>
+                                    </ol>
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,11 +524,29 @@
                 <img src="assets/icons/Arrow-Right-Square.svg" id="next-slide-pe" alt="">
             </div>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row row-pengumuman">
+            <div class="col-12 sliders">
                 <div class="">
                     <h5>Pendaftaran dan Pelaksanaan ASPD 24 - 28 Mei 2022</h5>
                     <p>Proses ASPD khusus bagi peserta didik LULUSAN LUAR DIY dan Lulusan DALAM DIY SEBELUM Th 2021</p>
+                </div>
+            </div>
+            <div class="col-12 sliders">
+                <div class="">
+                    <h5>Pengumuman 2</h5>
+                    <p>contoh 2 contoh 2 contoh 2 contoh 2 contoh 2 contoh 2 contoh 2 contoh 2 contoh 2</p>
+                </div>
+            </div>
+            <div class="col-12 sliders">
+                <div class="">
+                    <h5>Pengumuman 3</h5>
+                    <p>contoh 3 contoh 3 contoh 3 contoh 3 contoh 3 contoh 3 contoh 3 contoh 3 contoh 3</p>
+                </div>
+            </div>
+            <div class="col-12 sliders">
+                <div class="">
+                    <h5>Pengumuman 4</h5>
+                    <p>contoh 4 contoh 4 contoh 4 contoh 4 contoh 4 contoh 4 contoh 4 contoh 4 contoh 4</p>
                 </div>
             </div>
         </div>
@@ -336,7 +722,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <p>@2022</p>
+                    <p class="textfoot">SIVERI PPDB 2022 DINAS PENDIDIKAN PEMUDA DAN OLAHRAGA DIY </p>
                 </div>
             </div>
         </div>

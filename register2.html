@@ -56,7 +56,26 @@
                             <input type="text" class="form-control" placeholder="NISN">
                         </div>
                         <div class="input-group mb-2 justify-content-center">
-                            <a href="register.html" class="btn lbtn-blue-solid">Daftar</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn lbtn-blue-solid" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Daftar
+                            </button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Mohon maaf NISN anda tidak ditemukan di dalam database kami. Silahkan lakukan pendaftaran manual
+                                </div>
+                                <div class="modal-footer">
+                                <a href="register.html"  class="btn lbtn-blue-solid">Daftar Manual</a>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,7 +86,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <p>@2022</p>
+                    <p class="textfoot">SIVERI PPDB 2022 DINAS PENDIDIKAN PEMUDA DAN OLAHRAGA DIY </p>
                 </div>
             </div>
         </div>
