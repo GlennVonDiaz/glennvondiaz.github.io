@@ -189,4 +189,108 @@ $(document).ready(function () {
       content.css("max-height", "0px");
     }
   });
+
+  // auto slide
+  autoSlide();
+  function autoSlide() {
+    const autoSlideDelay = 6500; //miliseconds
+    let sliderContainer = $(".row-pengumuman").children(".col-12.sliders");
+    setInterval(function () {
+      let currIndex = $(".data-slider-true[data-slide-index]").data("slideIndex");
+      let nextIndex = currIndex + 1;
+      let sliderLength = $(".row-pengumuman").children(".col-12.sliders").length;
+      sliderContainer.each(function () {
+        if (nextIndex > sliderLength) {
+          $(`[data-slide-index='1']`).addClass("data-slider-true");
+          $(`[data-slide-index='1']`).removeClass("data-slider-false");
+
+          $(`.sliders:not([data-slide-index='1'])`).addClass("data-slider-false");
+          $(`.sliders:not([data-slide-index='1'])`).removeClass("data-slider-true");
+          return;
+        }
+
+        $(`.sliders:not([data-slide-index='${nextIndex}'])`).addClass("data-slider-false");
+        $(`.sliders:not([data-slide-index='${nextIndex}'])`).removeClass("data-slider-true");
+        $(`[data-slide-index='${nextIndex}']`).addClass("data-slider-true");
+        $(`[data-slide-index='${nextIndex}']`).removeClass("data-slider-false");
+      });
+    }, autoSlideDelay);
+  }
+  // auto slide end
+
+  // add class data-slider
+  addClassDataSlider();
+  function addClassDataSlider() {
+    let slidersLength = $(".row-pengumuman").children(".col-12.sliders").length;
+    let sliderContainer = $(".row-pengumuman").children(".col-12.sliders");
+
+    sliderContainer.first().addClass("data-slider-true");
+    sliderContainer.not(":first").addClass("data-slider-false");
+  }
+  // add class data-slider end
+
+  // add data-slider-index
+  addDataSlideIndex();
+  function addDataSlideIndex() {
+    let slidersLength = $(".row-pengumuman").children(".col-12.sliders").length;
+    let sliderContainer = $(".row-pengumuman").children(".col-12.sliders");
+
+    for (i = 1; i <= slidersLength; i++) {
+      sliderContainer.each(function (i) {
+        $(this).attr("data-slide-index", i + 1);
+      });
+    }
+  }
+  // add data-slider-index end
+
+  // slider
+  const sliderPrev = $("#previous-slide-pe");
+  const sliderNext = $("#next-slide-pe");
+
+  sliderNext.on("click", function () {
+    let slideIndex = $(".data-slider-true").data("slideIndex");
+    nextSlide(slideIndex);
+  });
+  sliderPrev.on("click", function () {
+    let slideIndex = $(".data-slider-true").data("slideIndex");
+    prevSlide(slideIndex);
+  });
+
+  function nextSlide(slideIndex) {
+    let nextIndex = slideIndex + 1;
+    let sliderLength = $(".row-pengumuman").children(".col-12.sliders").length;
+
+    if (nextIndex > sliderLength) {
+      $(`[data-slide-index='1']`).addClass("data-slider-true");
+      $(`[data-slide-index='1']`).removeClass("data-slider-false");
+
+      $(`.sliders:not([data-slide-index='1'])`).addClass("data-slider-false");
+      $(`.sliders:not([data-slide-index='1'])`).removeClass("data-slider-true");
+      return;
+    }
+
+    $(`.sliders:not([data-slide-index='${nextIndex}'])`).addClass("data-slider-false");
+    $(`.sliders:not([data-slide-index='${nextIndex}'])`).removeClass("data-slider-true");
+    $(`[data-slide-index='${nextIndex}']`).addClass("data-slider-true");
+    $(`[data-slide-index='${nextIndex}']`).removeClass("data-slider-false");
+  }
+  function prevSlide(slideIndex) {
+    let prevIndex = slideIndex - 1;
+    let sliderLength = $(".row-pengumuman").children(".col-12.sliders").length;
+
+    if (prevIndex < 1) {
+      $(`[data-slide-index='${sliderLength}']`).addClass("data-slider-true");
+      $(`[data-slide-index='${sliderLength}']`).removeClass("data-slider-false");
+
+      $(`.sliders:not([data-slide-index='${sliderLength}'])`).addClass("data-slider-false");
+      $(`.sliders:not([data-slide-index='${sliderLength}'])`).removeClass("data-slider-true");
+      return;
+    }
+
+    $(`.sliders:not([data-slide-index='${prevIndex}'])`).addClass("data-slider-false");
+    $(`.sliders:not([data-slide-index='${prevIndex}'])`).removeClass("data-slider-true");
+    $(`[data-slide-index='${prevIndex}']`).addClass("data-slider-true");
+    $(`[data-slide-index='${prevIndex}']`).removeClass("data-slider-false");
+  }
+  // slider end
 });
